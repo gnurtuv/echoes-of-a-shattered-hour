@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echoes of a Shattered Hour</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="title-screen">
+            <img src="assets/img/ui/title/main_title.png" alt="Game Title" id="title-logo">
+            <button id="start-button">Start Game</button>
+            <button id="load-game-button-title" aria-label="Load Game">
+                <img src="assets/img/ui/icons/navigation/load.png" alt="Load">
+            </button>
+        </div>
+
+        <div id="visual-novel-engine" class="hidden">
+            <div id="background-layer"></div>
+            <div id="cg-layer"></div>
+            <div id="character-layer">
+                <!-- Characters will be added here by JS -->
+            </div>
+            <div id="dialogue-box">
+                <div id="speaker-name"></div>
+                <div id="dialogue-text"></div>
+                <div id="choices-container">
+                    <!-- Choices will be added here by JS -->
+                </div>
+            </div>
+            <div id="ui-overlay">
+                <button id="next-button" aria-label="Next">
+                    <img src="assets/img/ui/icons/navigation/next_arrow.png" alt="Next">
+                </button>
+                <button id="menu-button-ingame" aria-label="Menu">
+                     <img src="assets/img/ui/icons/navigation/settings.png" alt="Menu">
+                </button>
+            </div>
+
+            <!-- In-Game Menu Panel -->
+            <div id="ingame-menu-panel" class="hidden">
+                <h3>Menu</h3>
+                <button id="menu-inventory-button">Inventory</button>
+                <button id="menu-save-button">Save Game</button>
+                <button id="menu-load-button">Load Game</button>
+                <button id="menu-quit-button">Quit to Title</button>
+                <button id="menu-close-button">Close Menu</button>
+            </div>
+
+            <!-- Inventory Panel -->
+            <div id="inventory-panel" class="hidden">
+                <h4>Inventory</h4>
+                <ul id="inventory-list">
+                    <!-- Items will be listed here by JS -->
+                </ul>
+                <button id="inventory-close-button">Close</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
